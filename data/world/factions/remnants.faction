@@ -1,0 +1,10 @@
+{
+	"portraits":{
+		"standard_male":[
+			"graphics/portraits/cursed68.png",
+		],
+		"standard_female":[
+			"graphics/portraits/cursed68.png",
+		],
+	},
+},				

@@ -1,0 +1,84 @@
+{
+  "collisionClass": "RAY_FIGHTER",
+  "collisionClassByFighter": "RAY_FIGHTER",
+  "convergeOnPoint": true,
+  "coreColor": [
+    255,
+    255,
+    255,
+    100
+  ],
+  "fireSoundOne": "guardian_pd_fire",
+  "fringeColor": [
+    155,
+    50,
+    50,
+    255
+  ],
+  "glowColor": [
+    255,
+    100,
+    100,
+    255
+  ],
+  "hardpointAngleOffsets": [
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "hardpointGlowSprite": "graphics/weapons/guardian_hardpoint_glow.png",
+  "hardpointOffsets": [
+    37,
+    0,
+    33,
+    -26.5,
+    38,
+    -18.5,
+    38,
+    18.5,
+    33,
+    26.5
+  ],
+  "hardpointSprite": "graphics/weapons/guardian_hardpoint_base.png",
+  "hitGlowRadius": 0,
+  "id": "guardian",
+  "noImpactSounds": false,
+  "noNonShieldImpactSounds": false,
+  "noShieldImpactSounds": false,
+  "pierceSet": [
+    PROJECTILE_FF,
+    PROJECTILE_NO_FF,
+    PROJECTILE_FIGHTER
+  ],
+  "pixelsPerTexel": 5,
+  "renderAboveAllWeapons": 0,
+  "size": "LARGE",
+  "specClass": "beam",
+  "textureScrollSpeed": 292,
+  "textureType": SMOOTH,
+  "turretAngleOffsets": [
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "turretGlowSprite": "graphics/weapons/guardian_turret_glow.png",
+  "turretOffsets": [
+    32.5,
+    0,
+    28.5,
+    -26.5,
+    29,
+    27,
+    33.5,
+    -18.5,
+    33.5,
+    18.5
+  ],
+  "turretSprite": "graphics/weapons/guardian_turret_base.png",
+  "type": "ENERGY",
+  "width": 8
+}

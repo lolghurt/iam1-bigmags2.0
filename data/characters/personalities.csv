@@ -1,0 +1,6 @@
+id,name,desc,bravery,CAPTURE,PATROL,INTERCEPT,ASSAULT,DEFEND,STRIKE,HARASS,FIRE_SUPPORT,CARRIER_GROUP,CIVILIAN_CRAFT,STRIKE_FORCE,LIGHT_ESCORT,DESTROYER_ESCORT
+timid,Secret Joestar,Nigerundayo Smokey!,5,0.5,0.5,0.1,0,1,0,0,3,3,3,1,1,1
+cautious,Rogal Dorn,I am fortifying this position,5,1,0.7,0.3,0.3,2,0.3,0.3,2,2,2,1,1,1
+steady,Thanos,"Perfectly balanced, as all things should be",5,1,1,1,1,1,1,1,1,1,1,1,1,1
+aggressive,Commisar Lord,"Drive me closer, I want to hit them with my sword!",5,1.5,1,2,2,0.5,2,2,0.5,0.5,0.5,1,0.5,0.5
+reckless,Ork,WAUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUGH,5,1.5,1,2,2,0.5,2,2,0.5,0.5,0.5,1,0.5,0.5
