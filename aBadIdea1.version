@@ -1,12 +1,12 @@
 {
-	"masterVersionFile":"https://github.com/lolghurt/ill-advised-1-bigger-mags/raw/master/aBadIdea1.version",
+	"masterVersionFile":"https://github.com/lolghurt/iam1-bigmags2.0/raw/master/aBadIdea1.version",
 	"modName":"Ill Advised Modifications 1 Bigger Mags",
 	"modThreadId":17437,
 	"modVersion":
 	{
 		"major":2020,
-		"minor":3,
-		"patch":28
+		"minor":7,
+		"patch":16
 	
 	},
 	"starsectorVersion":"0.9.1a"
