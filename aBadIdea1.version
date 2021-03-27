@@ -4,10 +4,10 @@
 	"modThreadId":17437,
 	"modVersion":
 	{
-		"major":2020,
-		"minor":7,
-		"patch":16
+		"major":2021,
+		"minor":3,
+		"patch":27
 	
 	},
-	"starsectorVersion":"0.9.1a"
+	"starsectorVersion":"0.95a-RC9"
 }
