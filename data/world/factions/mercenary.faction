@@ -1,4 +1,7 @@
 {
+	"shipNameSources":{
+		"JOJO":1,
+	},
 	"portraits":{
 		"standard_male":[
 			"graphics/portraits/fuel.png",

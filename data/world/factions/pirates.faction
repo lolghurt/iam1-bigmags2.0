@@ -1,4 +1,8 @@
 {
+	"shipNameSources":{
+		"ILLADVISED":0.1,
+		"JOJO":1,
+	},
 	"portraits":{
 		"standard_male":[
 			"graphics/portraits/fuel.png",

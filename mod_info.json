@@ -3,10 +3,10 @@
     "name": "zzz Ill Advised Modifications Section 1: BigMags 2.0",
     "author": "Lolghurt",
 	"utility": "true",
-    "version": "v2021.4.12",
+    "version": "v2021.4.22",
 	"replace": [
 		"data/weapons/guardian.wpn"
 	],
     "description": "All your shitty experience-ruining memes, not fit for a beast let alone a man.\n\nContains modifications to pre-existing graphics and data, as an extension of Big Mags",
-    "gameVersion": "0.95a-RC12"
+    "gameVersion": "0.95a-RC14"
 }
