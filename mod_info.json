@@ -3,7 +3,7 @@
     "name": "zzz Ill Advised Modifications Section 1: BigMags 2.0",
     "author": "Lolghurt",
 	"utility": "true",
-    "version": "v2021.10.4",
+    "version": "v2021.11.12",
 	"replace": [
 		"data/weapons/guardian.wpn"
 	],
