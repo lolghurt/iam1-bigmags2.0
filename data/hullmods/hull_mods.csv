@@ -1,161 +1,180 @@
-name,id,tier,rarity,tech/manufacturer,tags,uiTags,base value,unlocked,hidden,hiddenEverywhere,cost_frigate,cost_dest,cost_cruiser,cost_capital,script,desc,short,sprite
-Sanic Shields,advancedshieldemitter,0,,,"defensive, shields",Shields,3000,,,,3,6,9,15,data.hullmods.AcceleratedShieldEmitter,gotta shield fast,gotta shield fast,graphics/hullmods/accelerated_shields.png
-Prescription Glasses,advancedoptics,2,,,offensive,Weapons,1000,,,,5,10,15,25,data.hullmods.AdvancedOptics,bzzzzzzz lasers but far,bzzzzzzz lasers but far,graphics/hullmods/advanced_optics.png
-Eyes on the Back,turretgyros,0,,,defensive,Weapons,2500,,,,2,4,6,10,data.hullmods.AdvancedTurretGyros,"admit it, you installed this just to dab on people","admit it, you installed this just to dab on people",graphics/hullmods/advanced_turret_gyros.png
-Spare Turrets,armoredweapons,0,,,defensive,"Weapons, Defenses",2500,,,,3,6,9,15,data.hullmods.ArmoredWeapons,if they break just snap em off and put new ones on,if they break just snap em off and put new ones on,graphics/hullmods/armored_weapon_emplacements.png
-Underpaid Interns Running Errands,autorepair,2,,,"engines, defensive",Defenses,7500,,,,3,6,9,15,data.hullmods.AutomatedRepairUnit,go get me a coffee and a new pulse laser this one's fucked buddy,go get me a coffee and a new pulse laser this one's fucked buddy,graphics/hullmods/automated_repair_unit.png
-Omae Wa Prevention,auxiliarythrusters,1,,,engines,Engines,5000,TRUE,,,5,10,15,25,data.hullmods.AuxiliaryThrusters,anime is BANNED in this house,anime is BANNED in this house,graphics/hullmods/auxilliary_thrusters.png
-Privacy Door Cards,blast_doors,0,,,defensive,Defenses,2500,TRUE,,,5,10,15,25,data.hullmods.BlastDoors,OCCUPIED,OCCUPIED,graphics/hullmods/blast_doors.png
-Ace Combat on a Budget,converted_hangar,1,,,special,Fighters,5000,,,,0,10,15,20,data.hullmods.ConvertedHangar,"i built these talons out of balsa wood do you like them
-(Yes.)","i built these talons out of balsa wood do you like them
-(Yes.)",graphics/hullmods/converted_hangar.png
-Integrated Targeting Core,dedicated_targeting_core,0,,,offensive,Weapons,2500,TRUE,,,0,0,15,25,data.hullmods.DedicatedTargetingCore,makes the guns shoot a little bit farther,makes the guns shoot a little bit farther,graphics/hullmods/targeting_core.png
-That's Why They Call It a Smart Bomb,eccm,2,,,"offensive, defensive",Weapons,2500,,,,5,8,15,20,data.hullmods.ECCMPackage,"one shot, one kill","one shot, one kill",graphics/hullmods/eccm_package.png
-Internet,ecm,2,,,"offensive, special","Weapons, Support",4000,,,,10,15,20,25,com.fs.starfarer.api.impl.hullmods.ECMPackage,"typing LOL when they try to shoot u, unless they're better trolls than us
+name,id,tier,rarity,tech/manufacturer,tags,uiTags,base value,unlocked,hidden,hiddenEverywhere,cost_frigate,cost_dest,cost_cruiser,cost_capital,script,desc,short,sModDesc,sprite
+Sanic Shields,advancedshieldemitter,0,,,"defensive, shields, merc",Shields,3000,,,,3,6,9,15,data.hullmods.AcceleratedShieldEmitter,gotta shield fast,gotta shield fast,Increases the shield's turn rate and raise rate by an additional %s.,graphics/hullmods/accelerated_shields.png
+Magic All Terrain Space Tyres,adaptive_coils,2,,,"phase, merc",Phase,5000,,,,3,6,9,15,com.fs.starfarer.api.impl.hullmods.AdaptivePhaseCoils,grip that thing as hard as you can,grip that thing as hard as you can,,graphics/hullmods/phase_field.png
+Prescription Glasses,advancedoptics,2,,,"offensive, merc",Weapons,1000,,,,5,10,15,25,data.hullmods.AdvancedOptics,bzzzzzzz lasers but far,bzzzzzzz lasers but far,,graphics/hullmods/advanced_optics.png
+Eyes on the Back,turretgyros,0,,,"defensive, merc",Weapons,2500,,,,2,4,6,10,data.hullmods.AdvancedTurretGyros,"admit it, you installed this just to dab on people","admit it, you installed this just to dab on people",Increases damage to missiles and fighters by %s. Increases damage to smaller ships by %s per size class of difference.,graphics/hullmods/advanced_turret_gyros.png
+Spare Turrets,armoredweapons,0,,,"defensive, merc","Weapons, Defenses",2500,TRUE,,,3,6,9,15,data.hullmods.ArmoredWeapons,if they break just snap em off and put new ones on,if they break just snap em off and put new ones on,Increases the rate of fire of all non-missile weapons by %s.,graphics/hullmods/armored_weapon_emplacements.png
+Noone Uses Civ Packages,assault_package,1,,,"defensive, civ_package, no_drop, no_drop_salvage","Special, Defenses",8000,,,,3,6,9,15,com.fs.starfarer.api.impl.hullmods.AssaultPackage,noone uses this lmao just buy a military ship,noone uses this lmao just buy a military ship,,graphics/hullmods/assault_package.png
+Underpaid Interns Running Errands,autorepair,2,,,"engines, defensive, merc",Defenses,7500,,,,3,6,9,15,data.hullmods.AutomatedRepairUnit,go get me a coffee and a new pulse laser this one's fucked buddy,go get me a coffee and a new pulse laser this one's fucked buddy,"Reduces repair time to %s, and reduces overload duration by %s.",graphics/hullmods/automated_repair_unit.png
+Omae Wa Prevention,auxiliarythrusters,1,,,"engines, merc",Engines,5000,TRUE,,,5,10,15,25,data.hullmods.AuxiliaryThrusters,anime is BANNED in this house,anime is BANNED in this house,,graphics/hullmods/auxilliary_thrusters.png
+Throw the bullets I guess,ballistic_rangefinder,2,,,"offensive, merc",Weapons,8000,,,,5,10,15,25,com.fs.starfarer.api.impl.hullmods.BallisticRangefinder,<tooltip created in the script due to lots of highlighting>,,,graphics/hullmods/ballistic_rangefinder.png
+Privacy Door Cards,blast_doors,0,,,"defensive, merc",Defenses,2500,TRUE,,,5,10,15,25,data.hullmods.BlastDoors,OCCUPIED,OCCUPIED,Increases the crew casualty reduction to %s.,graphics/hullmods/blast_doors.png
+Ace Combat on a Budget,converted_hangar,1,,,"special, non_phase, merc",Fighters,5000,,,,0,10,15,20,com.fs.starfarer.api.impl.hullmods.ConvertedHangar,"i built these talons out of balsa wood do you like them
+(Yes.)",i built these talons out of balsa wood do you like them,"Increases the rate at which the fighter replacement rate recovers by %s for cruisers, and by %s for capital ships. No added effect for destroyers.",graphics/hullmods/converted_hangar.png
+Ace Combat is CANCELLED,converted_fighterbay,0,,,"req_spaceport, special, non_phase","Fighters, Logistics, Requires Dock",3000,,,,2,4,6,10,data.hullmods.ConvertedFighterBay,your dreams of flying are garbage so we're going to store garbage here now,your dreams of flying are garbage so we're going to store garbage here now,Monthly maintenance cost reduced by %s per fighter bay.,graphics/hullmods/converted_fighter_bay.png
+Integrated Targeting Core,dedicated_targeting_core,0,,,"offensive, merc",Weapons,2500,TRUE,,,0,0,15,25,data.hullmods.DedicatedTargetingCore,makes the guns shoot a little bit farther,makes the guns shoot a little bit farther,Increases the range bonus to %s for cruisers and %s for capital ships.,graphics/hullmods/targeting_core.png
+Shoot the Missiles First Morons,defensive_targeting_array,2,,,"special, merc, standard",Fighters,3000,,,,2,4,6,10,com.fs.starfarer.api.impl.hullmods.DefensiveTargetingArray,"its got guns, use it for self defense idiot","Increases fighter PD damage, reduces fighter roam range to zero.",Extends range of ballistic and energy weapons of the ship's fighters by %s units.,graphics/hullmods/defensive_targeting_array.png
+That's Why They Call It a Smart Bomb,eccm,2,,,"offensive, defensive, merc",Weapons,2500,,,,5,8,15,20,data.hullmods.ECCMPackage,"one shot, one kill","one shot, one kill",Fully negates the effect of ECM and flares on missiles fired by this ship.,graphics/hullmods/eccm_package.png
+Internet,ecm,2,,,"offensive, special, merc","Weapons, Support",4000,,,,6,12,18,24,com.fs.starfarer.api.impl.hullmods.ECMPackage,"typing LOL when they try to shoot u, unless they're better trolls than us
 LOL________LOLOLOLOLOL__LOL
 LOL________LOL______LO__LOL
 LOL________LOL______OL__LOL
 LOL________LOL______LO__LOL
 LOL________LOL______OL__LOL
 LOL________LOL______LO__LOL
-LOLOLOLOL__LOLOLOLOLOL__LOLOLOLOL","typing LOL when they try to shoot u, unless they're better trolls than us
-LOL________LOLOLOLOLOL__LOL
-LOL________LOL______LO__LOL
-LOL________LOL______OL__LOL
-LOL________LOL______LO__LOL
-LOL________LOL______OL__LOL
-LOL________LOL______LO__LOL
-LOLOLOLOL__LOLOLOLOLOL__LOLOLOLOL",graphics/hullmods/ecm_package.png
-Star Citizen Fans,expanded_deck_crew,1,,,special,Fighters,4000,,,,5,8,15,20,com.fs.starfarer.api.impl.hullmods.ExpandedDeckCrew,"you'll push those fighters out by hand and you'll like it
+LOLOLOLOL__LOLOLOLOLOL__LOLOLOLOL","typing LOL when they try to shoot u, unless they're better trolls than us",,graphics/hullmods/ecm_package.png
+Noone Uses Civ Packages,escort_package,1,,,"weapons, engines, civ_package, no_drop, no_drop_salvage","Special, Weapons, Engines",8000,,,,3,6,9,15,com.fs.starfarer.api.impl.hullmods.EscortPackage,noone uses this lmao just buy a military ship,noone uses this lmao just buy a military ship,,graphics/hullmods/escort_package.png
+Star Citizen Fans,expanded_deck_crew,1,,,"special, merc",Fighters,4000,,,,5,8,15,20,com.fs.starfarer.api.impl.hullmods.ExpandedDeckCrew,"you'll push those fighters out by hand and you'll like it
 
-no i don't have a ""place you can crash"" get a job","you'll push those fighters out by hand and you'll like it
-
-no i don't have a ""place you can crash"" get a job",graphics/hullmods/expanded_deck_crew.png
-Big Mags,magazines,1,,,offensive,Weapons,2500,,,,3,5,7,10,data.hullmods.ExpandedMagazines,HAHAHA HE SAID THE THING,HAHAHA HE SAID THE THING,graphics/hullmods/expanded_magazines2.png
-Two for the Price of One,missleracks,1,,,offensive,Weapons,5000,,,,8,12,20,30,data.hullmods.ExpandedMissileRacks,one in the chamber,one in the chamber,graphics/hullmods/expanded_missile_racks.png
-Long Bois,extendedshieldemitter,1,,,"shields, defensive",Shields,5000,,,,4,8,12,20,data.hullmods.ExtendedShieldEmitter,"like a reacharound, but with protection","like a reacharound, but with protection",graphics/hullmods/extended_shields.png
-Extra Shitty Vents,fluxcoil,0,,,special,Special,4000,TRUE,,,4,8,12,20,data.hullmods.FluxCoilAdjunct,this had better be a phase ship,this had better be a phase ship,graphics/hullmods/flux_coil_adjunct.png
-Extra Shitty Caps,fluxdistributor,0,,,special,Special,4000,TRUE,,,4,8,12,20,data.hullmods.FluxDistributor,"don't do it, captain","don't do it, captain",graphics/hullmods/flux_distributor.png
-Nobody Will Shoot Us in the Back Anyway,frontemitter,2,,,"shields, defensive",Shields,7000,,,,3,6,10,18,data.hullmods.FrontShieldEmitter,im never wrong,im never wrong,graphics/hullmods/front_shield_emitter.png
-Turn Off 5G,shield_shunt,1,,,"special, shields, merc","Special, Shields",3000,,,,3,5,7,10,com.fs.starfarer.api.impl.hullmods.ShieldShunt,a layer of shungite to ward off the cancer and microchips,Removes shields and increases resistance to EMP damage.,graphics/hullmods/heavy_armor.png
-Better Than Nothing,frontshield,0,,,"shields, defensive",Shields,4000,,,,5,10,15,25,data.hullmods.FrontShieldGenerator,momma said always use protection,momma said always use protection,graphics/hullmods/front_shield_generator.png
-Hard Asses,hardenedshieldemitter,3,,,"shields, defensive",Shields,10000,,,,6,12,18,30,data.hullmods.HardenedShieldEmitter,i laugh at danger and break all the rules,i laugh at danger and break all the rules,graphics/hullmods/hardened_shields.png
-Going for a Pee Before the Battle,hardened_subsystems,0,,,special,Special,2500,TRUE,,,5,10,15,25,data.hullmods.HardenedSubsystems,i've been here from the beginning and i'll still be here when all of you are dust,i've been here from the beginning and i'll still be here when all of you are dust,graphics/hullmods/hardened_subsystems.png
-Sandbags,heavyarmor,0,,,defensive,Defenses,2500,,,,8,15,20,40,data.hullmods.HeavyArmor,just don't get shot idiot,just don't get shot idiot,graphics/hullmods/heavy_armor.png
-Shoot the Missiles First Idiots,pointdefenseai,3,,,defensive,"Weapons, Defenses",10000,,,,4,8,12,20,data.hullmods.IntegratedPointDefenseAI,guns are for self-defense,guns are for self-defense,graphics/hullmods/integrated_point_defense_ai.png
-Dedicated Targeting Unit,targetingunit,3,,,offensive,Weapons,10000,,,,4,8,15,25,data.hullmods.IntegratedTargetingUnit,makes the guns shoot kinda farther,makes the guns shoot kinda farther,graphics/hullmods/integrated_targeting_unit.png
-Nav Relay,nav_relay,2,,,"engines, special","Engines, Support",5000,,,,10,15,20,25,com.fs.starfarer.api.impl.hullmods.NavRelay,"No Vayra, you are NOT stopping me from making this joke!","No Vayra, you are NOT stopping me from making this joke!",graphics/hullmods/nav_relay.png
-Okay They Are Shooting Us in the Back,adaptiveshields,3,,,"shields, defensive",Shields,7000,,,,6,12,18,30,data.hullmods.OmniShieldEmitter,ok ok i was wrong ok i get it,ok ok i was wrong ok i get it,graphics/hullmods/omni_shield_emitter_mod.png
+no i don't have a ""place you can crash"" get a job",you'll push those fighters out by hand and you'll like it,,graphics/hullmods/expanded_deck_crew.png
+Big Mags,magazines,1,,,"offensive, merc",Weapons,2500,,,,3,5,7,10,data.hullmods.ExpandedMagazines,HAHAHA HE SAID THE THING,HAHAHA HE SAID THE THING,Increases the ammo/charge regeneration rate for ballistic and energy weapons by %s.,graphics/hullmods/expanded_magazines2.png
+Two for the Price of One,missleracks,1,,,"offensive, merc",Weapons,5000,,,,8,12,20,30,data.hullmods.ExpandedMissileRacks,one in the chamber,one in the chamber,Reduces the rate of fire of missile weapons by %s.,graphics/hullmods/expanded_missile_racks.png
+Long Bois,extendedshieldemitter,1,,,"shields, defensive, merc",Shields,5000,,,,4,8,12,20,data.hullmods.ExtendedShieldEmitter,"like a reacharound, but with protection","like a reacharound, but with protection",Increases the shield's coverage by an additional %s degrees.,graphics/hullmods/extended_shields.png
+Extra Shitty Vents,fluxcoil,0,,,"special, merc",Special,4000,TRUE,,,4,8,12,20,data.hullmods.FluxCoilAdjunct,this had better be a phase ship,this had better be a phase ship,"Increases flux capacity by a further %s/%s/%s/%s, making the coil as efficient as adding capacitors.",graphics/hullmods/flux_coil_adjunct.png
+Extra Shitty Caps,fluxdistributor,0,,,"special, merc",Special,4000,TRUE,,,4,8,12,20,data.hullmods.FluxDistributor,"don't do it, captain","don't do it, captain","Increases flux dissipation by a further %s/%s/%s/%s, making the distributor as efficient as adding vents.",graphics/hullmods/flux_distributor.png
+,,,,,,,,,,,,,,,,,,,
+Turn Off 5G,shield_shunt,1,,,"special, shields, merc, no_build_in","Special, Shields",3000,,,,3,5,7,10,com.fs.starfarer.api.impl.hullmods.ShieldShunt,a layer of shungite to ward off the cancer and microchips,a layer of shungite to ward off the cancer and microchips,Increases the ship's armor by an additional %s.,graphics/hullmods/shield_shunt.png
+Better Than Nothing,frontshield,0,,,"shields, defensive",Shields,4000,,,,5,10,15,25,data.hullmods.FrontShieldGenerator,momma said always use protection,momma said always use protection,,graphics/hullmods/front_shield_generator.png
+Missile Autoloader,missile_autoloader,1,,,"offensive, merc, standard",Weapons,6000,,,,8,12,20,30,com.fs.starfarer.api.impl.hullmods.MissileAutoloader,<tooltip created in the script due to sections/other complexity>,Reloads missile weapons in small missile mounts,Increases the post-reload cooldown to %s seconds.,graphics/hullmods/missile_autoloader.png
+Hard Asses,hardenedshieldemitter,3,,,"shields, defensive, merc",Shields,10000,,,,5,10,15,25,data.hullmods.HardenedShieldEmitter,i laugh at danger and break all the rules,i laugh at danger and break all the rules,,graphics/hullmods/hardened_shields.png
+Going for a Pee Before the Battle,hardened_subsystems,0,,,"special, merc",Special,2500,TRUE,,,5,10,15,25,data.hullmods.HardenedSubsystems,i've been here from the beginning and i'll still be here when all of you are dust,i've been here from the beginning and i'll still be here when all of you are dust,,graphics/hullmods/hardened_subsystems.png
+Sandbags,heavyarmor,0,,,"defensive, merc",Defenses,2500,,,,8,15,20,40,data.hullmods.HeavyArmor,just don't get shot idiot,just don't get shot idiot,Reduces the ship's maneuverability by %s.,graphics/hullmods/heavy_armor.png
+Make the Laser Worse,high_scatter_amp,3,,,"offensive, merc",Weapons,5000,,,,4,8,12,20,com.fs.starfarer.api.impl.hullmods.HighScatterAmp,<tooltip created in the script due to sections>,<tooltip created in the script due to sections>,Increases beam weapon damage by an additional %s.,graphics/hullmods/high_scatter_amp.png
+Shoot the Missiles First Idiots,pointdefenseai,3,,,"defensive, merc","Weapons, Defenses",10000,,,,4,8,12,20,data.hullmods.IntegratedPointDefenseAI,guns are for self-defense,guns are for self-defense,"All small non-missile weapons are classified as ""point-defense"", automatically target missiles, and are affected by point-defense stat modifiers.",graphics/hullmods/integrated_point_defense_ai.png
+# Shoot the Missiles First Morons,pdintegration,3,,,"defensive, merc","Weapons, Defenses",10000,,,,12,15,18,24,com.fs.starfarer.api.impl.hullmods.PDIntegration,guns are still for self-defense,guns are still for self-defense,,graphics/hullmods/integrated_point_defense_ai.png
+Dedicated Targeting Unit,targetingunit,3,,,"offensive, merc",Weapons,10000,,,,4,8,15,25,data.hullmods.IntegratedTargetingUnit,makes the guns shoot kinda farther,makes the guns shoot kinda farther,,graphics/hullmods/integrated_targeting_unit.png
+Nav Relay,nav_relay,2,,,"engines, special, merc","Engines, Support",5000,,,,10,15,20,25,com.fs.starfarer.api.impl.hullmods.NavRelay,"No Vayra, you are NOT stopping me from making this joke!","No Vayra, you are NOT stopping me from making this joke!",,graphics/hullmods/nav_relay.png
+The Matrix,neural_interface,3,,,"special, no_build_in",Special,10000,,,,3,6,9,25,com.fs.starfarer.api.impl.hullmods.NeuralInterface,will you enter it,will you enter it,,graphics/hullmods/neural_interface.png
+Neo,neural_integrator,,,,"special, no_build_in",Special,10000,,,,4,8,12,50,com.fs.starfarer.api.impl.hullmods.NeuralIntegrator,mister anderson,mister anderson,,graphics/hullmods/neural_integrator.png
+Nobody Will Shoot Us in the Back Anyway,frontemitter,2,,,"shields, defensive, merc",Shields,7000,,,,3,6,10,18,data.hullmods.FrontShieldEmitter,im never wrong,im never wrong,Reduces the amount of damage taken by shields by %s.,graphics/hullmods/front_shield_emitter.png
+Okay They Are Shooting Us in the Back,adaptiveshields,3,,,"shields, defensive, merc",Shields,7000,,,,3,6,10,18,data.hullmods.OmniShieldEmitter,ok ok i was wrong ok i get it,ok ok i was wrong ok i get it,Negates the shield arc penalty.,graphics/hullmods/omni_shield_emitter_mod.png
 Callcentre,operations_center,1,,,special,Special,5000,,,,30,30,30,30,com.fs.starfarer.api.impl.hullmods.OperationsCenter,"please hold
 please hold
 please hold
 please hold
-please hold","please hold
-please hold
-please hold
-please hold
-please hold",graphics/hullmods/operations_center.png
-Pod Racers,recovery_shuttles,1,,,special,Fighters,4000,,,,5,8,15,20,com.fs.starfarer.api.impl.hullmods.RecoveryShuttles,"20 percent of the time, it works everytime","20 percent of the time, it works everytime",graphics/hullmods/recovery_shuttles.png
-Brick Shithouse,reinforcedhull,0,,,defensive,Defenses,2500,TRUE,,,5,10,15,30,data.hullmods.ReinforcedBulkheads,"I GET KNOCKED DOWN
+please hold",please hold,,graphics/hullmods/operations_center.png
+CTRL+ALT+DEL Macro,phase_anchor,3,,,"phase, merc, no_build_in",Phase,7000,,,,10,20,30,50,com.fs.starfarer.api.impl.hullmods.PhaseAnchor,savescum if you're gonna lose,savescum if you're gonna lose,,graphics/hullmods/phase_anchor.png
+Pod Racers,recovery_shuttles,1,,,special,Fighters,4000,,,,3,6,9,15,com.fs.starfarer.api.impl.hullmods.RecoveryShuttles,"20 percent of the time, it works everytime","20 percent of the time, it works everytime",Increases the fighter pilot casualty reduction to %s.,graphics/hullmods/recovery_shuttles.png
+Brick Shithouse,reinforcedhull,0,,,"defensive, merc",Defenses,2500,TRUE,,,5,10,15,30,data.hullmods.ReinforcedBulkheads,"I GET KNOCKED DOWN
 
 BUT I GET UP AGAIN
 
-YOU'RE NEVER GONNA KEEP ME DOWN I GET KNOCKED DOWN","I GET KNOCKED DOWN
+YOU'RE NEVER GONNA KEEP ME DOWN I GET KNOCKED DOWN",I GET KNOCKED DOWN,,graphics/hullmods/reinforced_bulkheads.png
+Bigger Sewage Port,fluxbreakers,2,,,"defensive, merc","Special, Defenses",7000,,,,3,6,9,15,data.hullmods.FluxBreakers,*fart noises*,*fart noises*,Increases the flux dissipation rate while venting by a further %s.,graphics/hullmods/resistant_flux_conduits.png
+Voided Warranty,safetyoverrides,0,,,"special, engines, offensive, merc, no_build_in","Special, Engines",2500,TRUE,,,15,30,45,70,data.hullmods.SafetyOverrides,"im pretty sure that voids your warranty
+(No, it warrants your void.)",im pretty sure that voids your warranty,,graphics/hullmods/safety_overrides.png
+,,,,,,,,,,,,,,,,,,,
+Disable Phone Chargers,stabilizedshieldemitter,1,,,"shields, defensive, merc",Shields,5000,,,,3,6,9,15,data.hullmods.StabilizedShieldEmitter,i unplugged the toaster too do you know how much power those things use,i unplugged the toaster too do you know how much power those things use,Converts %s of the hard flux damage taken by shields to soft flux.,graphics/hullmods/stabilized_shields.png
+,,,,,,,,,,,,,,,,,,,
+Gotta Go Fast,unstable_injector,0,,,"engines, merc",Engines,2500,TRUE,,,5,10,15,25,data.hullmods.UnstableInjector,"Mmm, chilidogs.","Mmm, chilidogs.",,graphics/hullmods/unstable_injector.png
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+# logistics hullmods,,,,,,,,,,,,,,,,,,,
+Cuddle Puddle,additional_berthing,0,,,"req_spaceport, merc","Logistics, Requires Dock",3000,TRUE,,,5,10,15,25,com.fs.starfarer.api.impl.hullmods.AdditionalBerthing,the concept of personal privacy didn't survive the collapse,the concept of personal privacy didn't survive the collapse,"Doubles the crew capacity increase and, for, civilian hulls, negates the maintenance cost increase.",graphics/hullmods/berthing.png
+Strategic Sanic,augmentedengines,1,,,"req_spaceport, merc","Logistics, Requires Dock",8000,,,,8,16,24,40,data.hullmods.AugmentedEngines,gotta go fast but only where it doesn't matter,gotta go fast but only where it doesn't matter,Increases maximum burn level by a further %s.,graphics/hullmods/augmented_drive_field2.png
+Mairaath Memoirs,auxiliary_fuel_tanks,0,,,"req_spaceport, merc","Logistics, Requires Dock",4000,TRUE,,,5,10,15,25,com.fs.starfarer.api.impl.hullmods.AuxiliaryFuelTanks,Mairaath will never recover from this roast.,Mairaath will never recover from this roast.,"Doubles the fuel capacity increase and, for, civilian hulls, negates the maintenance cost increase.",graphics/hullmods/fuel_tanks.png
+Duct Tape,efficiency_overhaul,0,,,"req_spaceport, merc","Logistics, Requires Dock",4000,,,,3,6,9,15,com.fs.starfarer.api.impl.hullmods.EfficiencyOverhaul,my other spaceship is a prius,my other spaceship is a prius,"Reduces maintenance cost, fuel use, and minimum crew requirement by a further %s.",graphics/hullmods/efficiency.png
+Personal Luggage,expanded_cargo_holds,0,,,"req_spaceport, merc","Logistics, Requires Dock",4000,TRUE,,,5,10,15,25,com.fs.starfarer.api.impl.hullmods.ExpandedCargoHolds,"listen i need you to put these in your suitcase, they only let us bring back two bottles per person","listen i need you to put these in your suitcase, they only let us bring back two bottles per person","Doubles the cargo capacity increase and, for, civilian hulls, negates the maintenance cost increase.",graphics/hullmods/expanded_cargo.png
+I Can See My House from Here,hiressensors,2,,,"req_spaceport, merc","Logistics, Requires Dock",9000,,,,9,9,9,15,com.fs.starfarer.api.impl.hullmods.HighResSensors,BUT NOT WALDO. THIS IS TRUE SUFFERING.,BUT NOT WALDO. THIS IS TRUE SUFFERING.,"Increases the ship's in-combat vision range by %s/%s/%s/%s, based on hull size.",graphics/hullmods/high_res_sensors.png
+Sneaky Engingines,insulatedengine,0,,,"engines, defensive, req_spaceport, merc","Engines, Logistics, Defenses, Requires Dock",2500,,,,3,6,9,15,data.hullmods.InsulatedEngines,shhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh,shhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh,"Increases engine durability by a further %s, and Increases the sensor profile reduction to %s.",graphics/hullmods/insulated_engine_assembly.png
+No Booze on Duty,militarized_subsystems,0,,,"req_spaceport, merc","Special, Logistics, Requires Dock",6000,TRUE,,,5,10,15,25,com.fs.starfarer.api.impl.hullmods.MilitarizedSubsystems,oculd you at least poretened ftyo be profitesional,oculd you at least poretened ftyo be profitesional,Negates the increased crew requirements.,graphics/hullmods/militarized_subsystems.png
+Tin Foil,solar_shielding,2,,,"defensive, req_spaceport, merc","Defenses, Logistics, Requires Dock",5000,,,,3,6,9,15,data.hullmods.SolarShielding,its SPF 50,its SPF 50,Increases the protection from solar coronae and similar hazards to %s.,graphics/hullmods/solar_shielding2.png
+Aperture Science Division,surveying_equipment,1,,,"special, req_spaceport","Logistics, Requires Dock",5000,,,,5,10,15,25,data.hullmods.SurveyingEquipment,i found this shiny rock isn't it cool,i found this shiny rock isn't it cool,Increases the survey cost reduction by %s.,graphics/hullmods/surveying_equipment.png
+,,,,,,,,,,,,,,,,,,,
+# standard built-in hullmods,,,,,,,,,,,,,,,,,,,
+Snoipah on Board,terminator_core,,,,,,,,TRUE,,0,0,0,0,com.fs.starfarer.api.impl.hullmods.TerminatorCore,You are a missile! This means I have a huge damage bonus! POINT AND DEFEND!,You are a missile! This means I have a huge damage bonus! POINT AND DEFEND!,,graphics/hullmods/terminator_core.png
+This Isn't Even My Final Form,shared_flux_sink,,,,,,,,TRUE,,0,0,0,0,com.fs.starfarer.api.impl.hullmods.SharedFluxSink,destroy me and i will return more powerful than ever before,destroy me and i will return more powerful than ever before,,graphics/hullmods/shared_flux_sink.png
+DON'T FUCKING TOUCH ME,stealth_minefield,,,,,,,,TRUE,,0,0,0,0,com.fs.starfarer.api.impl.hullmods.StealthMinefield,nerf this,nerf this,,graphics/hullmods/stealth_mines.png
+Don't Fucking Touch Me,stealth_minefield_lt,,,,,,,,TRUE,,0,0,0,0,com.fs.starfarer.api.impl.hullmods.StealthMinefieldLT,nerf this,nerf this,,graphics/hullmods/stealth_mines.png
+B-Deck,bdeck,,,,,,,,TRUE,,0,0,0,0,com.fs.starfarer.api.impl.hullmods.BDeck,"Once per combat, when the fighter replacement rate reaches %s, the fighter launch bays are switched over to operate from a ""B-Deck"".
 
-BUT I GET UP AGAIN
+Standby fighters are launched to rapidly bring the wings back up to full strength, and the fighter replacement rate is set to %s.",Launches fresh wing once per combat and replenishes the replacement rate.,,graphics/hullmods/bdeck.png
+Model Airplanes,chassis_storage,,,,,,,,TRUE,,0,0,0,0,com.fs.starfarer.api.impl.hullmods.FighterChassisStorage,"Actually, we have an automatic paper plane assembly machine in the back, too.","Actually, we have an automatic paper plane assembly machine in the back, too.",,graphics/hullmods/expanded_deck_crew.png
+Shield Always On,shield_always_on,,,,,,,,TRUE,TRUE,0,0,0,0,com.fs.starfarer.api.impl.hullmods.ShieldAlwaysOn,i never found out where the 'shields off' button is and now it's too late to ask,i never found out where the 'shields off' button is and now it's too late to ask,,graphics/hullmods/hardened_shields.png
+Periodic Missile Reload,missile_reload,,,,,,,,TRUE,,0,0,0,0,com.fs.starfarer.api.impl.hullmods.PeriodicMissileReload,there's more where those came from,there's more where those came from,,graphics/hullmods/expanded_missile_racks.png
+Hidden Gems,shielded_holds,2,,,,,,,TRUE,,5,10,15,30,data.hullmods.ShieldedCargoHolds,"if you're not stealing from work, you're stealing from your family","if you're not stealing from work, you're stealing from your family",,graphics/hullmods/shielded_cargo_hold.png
+Touchy Touchy,repair_gantry,,,,,,,,TRUE,,5,10,20,40,com.fs.starfarer.api.impl.campaign.RepairGantry,"What other people call trash, you might also call trash, but thereÁó¥ always a chance that in that trash you will find a periodic quantum reversal rapid capacitors or hyperion-grade phase displacement device, which are also trash„ÉªBut hey, um, it could be worse. You donÁ®ö actually want this garbage and you are just looking for fools to buy it from you, right? Hahaha.","What other people call trash, you might also call trash, but thereÁó¥ always a chance that in that trash you will find a periodic quantum reversal rapid capacitors or hyperion-grade phase displacement device, which are also trash„ÉªBut hey, um, it could be worse. You donÁ®ö actually want this garbage and you are just looking for fools to buy it from you, right? Hahaha.",,graphics/hullmods/repair_gantry.png
+DIVE DIVE DIVE,phasefield,,,,,,,,TRUE,,0,0,0,0,com.fs.starfarer.api.impl.hullmods.PhaseField,they'll never see me coming,they'll never see me coming,,graphics/hullmods/phase_field.png
+Shucks Flunt,fluxshunt,,,,,,,,TRUE,,10,20,30,50,data.hullmods.FluxShunt,actually i just pour the flux out the window while they're not looking,actually i just pour the flux out the window while they're not looking,,graphics/hullmods/flux_shunt.png
+YOU ARE OUT OF UNIFORM SOLDIER,civgrade,,,,,,,,TRUE,,0,0,0,0,data.hullmods.CivGrade,"DonÁ®ö have any? You expect me to believe that, maggot? The truth is that you lost an expensive piece of army-issue equipment. That suit is going to come out of your pay, and you are going to remain in this mans army until you are five hundred and ten years old, which is the number of years it will take for you to pay for a Mark II Powered Combat Armor you have lost! Report to the armory and have a new suit issued to you, then report back to me, private! Dismissed!","DonÁ®ö have any? You expect me to believe that, maggot? The truth is that you lost an expensive piece of army-issue equipment. That suit is going to come out of your pay, and you are going to remain in this mans army until you are five hundred and ten years old, which is the number of years it will take for you to pay for a Mark II Powered Combat Armor you have lost! Report to the armory and have a new suit issued to you, then report back to me, private! Dismissed!",,graphics/hullmods/civilian_grade.png
+Expensive Gubbinz,high_maintenance,,,,,,,,TRUE,,0,0,0,0,data.hullmods.HighMaintenance,you gotta fill the tanks with PREMIUM antimatter or it doesnÁ®ö go,you gotta fill the tanks with PREMIUM antimatter or it doesnÁ®ö go,,graphics/hullmods/high_maintenance.png
+Energy Bolt Coherer,coherer,,,,,,,,TRUE,,0,0,0,0,com.fs.starfarer.api.impl.hullmods.EnergyBoltCoherer,<tooltip created in the script>,Increases base range of non-beam energy weapons.,,graphics/hullmods/coherer.png
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+Little Red Wagon,tow_cable,,,,,,,,TRUE,,0,0,0,0,com.fs.starfarer.api.impl.campaign.TowCable,how about we all get out and push,how about we all get out and push,,graphics/hullmods/monofilament_cable.png
+Party Van,drive_field_stabilizer,,,,,,,,TRUE,,0,0,0,0,com.fs.starfarer.api.impl.hullmods.DriveFieldStabilizer,how about we all get out and push,how about we all get out and push,,graphics/hullmods/augmented_drive_field.png
+STEEL RAIN,ground_support,,,,,,,,TRUE,,0,0,0,0,com.fs.starfarer.api.impl.hullmods.GroundSupport,your money and your life (and your blueprints),your money and your life (and your blueprints),,graphics/hullmods/ground_support.png
+STEEL HAIL,advanced_ground_support,,,,,,,,TRUE,,0,0,0,0,com.fs.starfarer.api.impl.hullmods.AdvancedGroundSupport,your money and your life and your blueprints and everything else here,your money and your life and your blueprints and everything else here,,graphics/hullmods/ground_support_adv.png
+"Live Fast, Die Young",delicate,,,,,,,,TRUE,,0,0,0,0,data.hullmods.DelicateMachinery,"The crew, not the ship. How itÁó¥ always the biggest slackers and worst marathon runners that end up on phase ship is a mystery.
+Well, not really. ItÁó¥ actually pretty simple. There are already periods of downtime in combat. Can you imagine having three times as much free time? Phase ships are the bollocks.
+Wait, this isnÁ®ö a phase ship? WHY THE HELL DIDNÊé¢ ANYONE TELL ME OH SHIT OH FU-","The crew, not the ship.",,graphics/hullmods/delicate_machinery.png
+Go Big or Go Home,hbi,,,,,,,,TRUE,,0,0,0,0,com.fs.starfarer.api.impl.hullmods.HeavyBallisticsIntegration,size matters,size matters,,graphics/hullmods/ballistics_integration.png
+The Gaper,vast_hangar,,,,,,,,TRUE,,0,0,0,0,com.fs.starfarer.api.impl.hullmods.VastHangar,its pretty fuckin big in here huh,Increases the effect of Converted Hangar and removes its penalties.,,graphics/hullmods/vast_hangar.png
+Dummy Thicc,rugged,,,,,,,,TRUE,,0,0,0,0,com.fs.starfarer.api.impl.hullmods.RuggedConstruction,The clap of its ass cheeks makes it easier to find,The clap of its ass cheeks makes it easier to find,,graphics/hullmods/rugged_construction.png
+Skynet,automated,,,,,,,,TRUE,,0,0,0,0,com.fs.starfarer.api.impl.hullmods.Automated,BEEP BOOP DESTROY ALL HUMANS,BEEP BOOP DESTROY ALL HUMANS,,graphics/hullmods/automated.png
+I Can Shoot My House From Here,advancedcore,,,,,,,,TRUE,,0,0,0,0,data.hullmods.AdvancedTargetingCore,"ItÁó¥ simple, we kill Waldo. And everyone else. Once you get your murders into statistics range, heÁó¥ bound to get caught in the crossfire.","ItÁó¥ simple, we kill Waldo. And everyone else. Once you get your murders into statistics range, heÁó¥ bound to get caught in the crossfire.",,graphics/hullmods/advanced_targeting_core.png
+Make ACGs Marksman Rifles Or Die Trying,supercomputer,,,,,,,,TRUE,,0,0,0,0,data.hullmods.TargetingSupercomputer,makes the guns shoot REALLY fuckin far,makes the guns shoot REALLY fuckin far,,graphics/hullmods/targeting_supercomputer.png
+Barotrauma,ex_phase_coils,,,,,,,,TRUE,,0,0,0,0,com.fs.starfarer.api.impl.hullmods.ExperimentalPhaseCoils,Dive deeper,Dive deeper,,graphics/hullmods/phase_coils_experimental.png
+Zap em Harder,high_frequency_attractor,,,,,,,,TRUE,,0,0,0,0,com.fs.starfarer.api.combat.BaseHullMod,Makes the Zaps Zappier,Makes the Zaps Zappier,,graphics/hullmods/high_volition_attractor.png
+Those two guys,ablative_armor,,,,,,,,TRUE,,0,0,0,0,com.fs.starfarer.api.impl.hullmods.AblativeArmor,even in space you cannot escape ERA,Reduces damage reduction by armor.,,graphics/hullmods/ablative_armor.png
+Headless Chicken,distributed_fire_control,,,,,,,,TRUE,,0,0,0,0,com.fs.starfarer.api.impl.hullmods.DistributedFireControl,goddamn its still alive,Increases weapon durability and reduces EMP damage taken.,,graphics/hullmods/distributed_fire_control2.png
+Ace Combat 2 on a Budget,converted_bay,1,,,,,,,TRUE,,0,0,0,0,data.hullmods.ConvertedCargoBay,do you like these fighters i made them myself,do you like these fighters i made them myself,,graphics/hullmods/converted_hangar.png
+Special Modifications,andrada_mods,,,,dmod,,,,TRUE,,0,0,0,0,com.fs.starfarer.api.impl.hullmods.AndradaMods,"During an inspection of an early prototype, the Supreme Executor was heard to comment unfavorably on exposed conduits running along the passageways, and the danger these must pose to the brave and loyal crew under combat conditions. 
 
-YOU'RE NEVER GONNA KEEP ME DOWN I GET KNOCKED DOWN",graphics/hullmods/reinforced_bulkheads.png
-Bigger Sewage Port,fluxbreakers,2,,,defensive,"Special, Defenses",7000,,,,3,6,9,15,data.hullmods.FluxBreakers,*fart noises*,*fart noises*,graphics/hullmods/resistant_flux_conduits.png
-Voided Warranty,safetyoverrides,0,,,"special, engines, offensive","Special, Engines",2500,TRUE,,,15,30,45,70,data.hullmods.SafetyOverrides,"im pretty sure that voids your warranty
-(No, it warrants your void.)","im pretty sure that voids your warranty
-(No, it warrants your void.)",graphics/hullmods/safety_overrides.png
-,,,,,,,,,,,,,,,,,,
-Disable Phone Chargers,stabilizedshieldemitter,1,,,"shields, defensive",Shields,5000,,,,3,6,9,15,data.hullmods.StabilizedShieldEmitter,i unplugged the toaster too do you know how much power those things use,i unplugged the toaster too do you know how much power those things use,graphics/hullmods/stabilized_shields.png
-,,,,,,,,,,,,,,,,,,
-Gotta Go Fast,unstable_injector,0,,,engines,Engines,2500,TRUE,,,5,10,15,25,data.hullmods.UnstableInjector,"Mmm, chilidogs.","Mmm, chilidogs.",graphics/hullmods/unstable_injector.png
-,,,,,,,,,,,,,,,,,,
-# logistics hullmods,,,,,,,,,,,,,,,,,,
-Cuddle Puddle,additional_berthing,0,,,req_spaceport,"Logistics, Requires Dock",3000,TRUE,,,5,10,15,25,com.fs.starfarer.api.impl.hullmods.AdditionalBerthing,the concept of personal privacy didn't survive the collapse,the concept of personal privacy didn't survive the collapse,graphics/hullmods/berthing.png
-Strategic Sanic,augmentedengines,1,,,req_spaceport,"Logistics, Requires Dock",8000,,,,8,16,24,40,data.hullmods.AugmentedEngines,gotta go fast but only where it doesn't matter,gotta go fast but only where it doesn't matter,graphics/hullmods/augmented_drive_field2.png
-Mairaath Memoirs,auxiliary_fuel_tanks,0,,,req_spaceport,"Logistics, Requires Dock",4000,TRUE,,,5,10,15,25,com.fs.starfarer.api.impl.hullmods.AuxiliaryFuelTanks,Mairaath will never recover from this roast.,Mairaath will never recover from this roast.,graphics/hullmods/fuel_tanks.png
-Duct Tape,efficiency_overhaul,0,,,req_spaceport,"Logistics, Requires Dock",4000,,,,3,6,9,15,com.fs.starfarer.api.impl.hullmods.EfficiencyOverhaul,my other spaceship is a prius,my other spaceship is a prius,graphics/hullmods/efficiency.png
-Personal Luggage,expanded_cargo_holds,0,,,req_spaceport,"Logistics, Requires Dock",4000,TRUE,,,5,10,15,25,com.fs.starfarer.api.impl.hullmods.ExpandedCargoHolds,"listen i need you to put these in your suitcase, they only let us bring back two bottles per person","listen i need you to put these in your suitcase, they only let us bring back two bottles per person",graphics/hullmods/expanded_cargo.png
-I Can See My House from Here,hiressensors,2,,,req_spaceport,"Logistics, Requires Dock",9000,,,,9,9,9,15,com.fs.starfarer.api.impl.hullmods.HighResSensors,BUT NOT WALDO. THIS IS TRUE SUFFERING.,BUT NOT WALDO. THIS IS TRUE SUFFERING.,graphics/hullmods/high_res_sensors.png
-Sneaky Engingines,insulatedengine,0,,,"engines, defensive, req_spaceport","Engines, Logistics, Defenses, Requires Dock",2500,,,,3,6,9,15,data.hullmods.InsulatedEngines,shhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh,shhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh,graphics/hullmods/insulated_engine_assembly.png
-No Booze on Duty,militarized_subsystems,0,,,req_spaceport,"Logistics, Requires Dock",6000,TRUE,,,5,10,15,25,com.fs.starfarer.api.impl.hullmods.MilitarizedSubsystems,oculd you at least poretened ftyo be profitesional,oculd you at least poretened ftyo be profitesional,graphics/hullmods/militarized_subsystems.png
-Tin Foil,solar_shielding,2,,,"defensive, req_spaceport","Defenses, Logistics, Requires Dock",5000,,,,3,6,9,15,data.hullmods.SolarShielding,its SPF 50,its SPF 50,graphics/hullmods/solar_shielding2.png
-Aperture Science Division,surveying_equipment,1,,,"special, req_spaceport","Logistics, Requires Dock",5000,,,,5,10,15,25,data.hullmods.SurveyingEquipment,i found this shiny rock isn't it cool,i found this shiny rock isn't it cool,graphics/hullmods/surveying_equipment.png
-,,,,,,,,,,,,,,,,,,
-# standard built-in hullmods,,,,,,,,,,,,,,,,,,
-Snoipah on Board,terminator_core,,,,,,,,TRUE,,0,0,0,0,com.fs.starfarer.api.impl.hullmods.TerminatorCore,You are a missile! This means I have a huge damage bonus! POINT AND DEFEND!,You are a missile! This means I have a huge damage bonus! POINT AND DEFEND!,graphics/hullmods/terminator_core.png
-This Isn't Even My Final Form,shared_flux_sink,,,,,,,,TRUE,,0,0,0,0,com.fs.starfarer.api.impl.hullmods.SharedFluxSink,destroy me and i will return more powerful than ever before,destroy me and i will return more powerful than ever before,graphics/hullmods/shared_flux_sink.png
-DON'T FUCKING TOUCH ME,stealth_minefield,,,,,,,,TRUE,,0,0,0,0,com.fs.starfarer.api.impl.hullmods.StealthMinefield,nerf this,nerf this,graphics/hullmods/stealth_mines.png
-Don't Fucking Touch Me,stealth_minefield_lt,,,,,,,,TRUE,,0,0,0,0,com.fs.starfarer.api.impl.hullmods.StealthMinefieldLT,nerf this,nerf this,graphics/hullmods/stealth_mines.png
-Model Airplanes,chassis_storage,,,,,,,,TRUE,,0,0,0,0,com.fs.starfarer.api.impl.hullmods.FighterChassisStorage,"Actually, we have an automatic paper plane assembly machine in the back, too.","Actually, we have an automatic paper plane assembly machine in the back, too.",graphics/hullmods/expanded_deck_crew.png
-Shield Always On,shield_always_on,,,,,,,,TRUE,TRUE,0,0,0,0,com.fs.starfarer.api.impl.hullmods.ShieldAlwaysOn,i never found out where the 'shields off' button is and now it's too late to ask,i never found out where the 'shields off' button is and now it's too late to ask,graphics/hullmods/hardened_shields.png
-Periodic Missile Reload,missile_reload,,,,,,,,TRUE,TRUE,0,0,0,0,com.fs.starfarer.api.impl.hullmods.PeriodicMissileReload,there's more where those came from,there's more where those came from,graphics/hullmods/hardened_shields.png
-Hidden Gems,shielded_holds,2,,,,,,,TRUE,,5,10,15,30,data.hullmods.ShieldedCargoHolds,"if you're not stealing from work, you're stealing from your family","if you're not stealing from work, you're stealing from your family",graphics/hullmods/shielded_cargo_hold.png
-Touchy Touchy,repair_gantry,,,,,,,,TRUE,,5,10,20,40,com.fs.starfarer.api.impl.campaign.RepairGantry,"What other people call trash, you might also call trash, but thereís always a chance that in that trash you will find a periodic quantum reversal rapid capacitors or hyperion-grade phase displacement device, which are also trashÅEBut hey, um, it could be worse. You donít actually want this garbage and you are just looking for fools to buy it from you, right? Hahaha.","What other people call trash, you might also call trash, but thereís always a chance that in that trash you will find a periodic quantum reversal rapid capacitors or hyperion-grade phase displacement device, which are also trashÅEBut hey, um, it could be worse. You donít actually want this garbage and you are just looking for fools to buy it from you, right? Hahaha.",graphics/hullmods/repair_gantry.png
-DIVE DIVE DIVE,phasefield,,,,,,,,TRUE,,0,0,0,0,com.fs.starfarer.api.impl.hullmods.PhaseField,they'll never see me coming,they'll never see me coming,graphics/hullmods/phase_field.png
-Shucks Flunt,fluxshunt,,,,,,,,TRUE,,10,20,30,50,data.hullmods.FluxShunt,actually i just pour the flux out the window while they're not looking,actually i just pour the flux out the window while they're not looking,graphics/hullmods/flux_shunt.png
-YOU ARE OUT OF UNIFORM SOLDIER,civgrade,,,,,,,,TRUE,,0,0,0,0,data.hullmods.CivGrade,"Donít have any? You expect me to believe that, maggot? The truth is that you lost an expensive piece of army-issue equipment. That suit is going to come out of your pay, and you are going to remain in this mans army until you are five hundred and ten years old, which is the number of years it will take for you to pay for a Mark II Powered Combat Armor you have lost! Report to the armory and have a new suit issued to you, then report back to me, private! Dismissed!","Donít have any? You expect me to believe that, maggot? The truth is that you lost an expensive piece of army-issue equipment. That suit is going to come out of your pay, and you are going to remain in this mans army until you are five hundred and ten years old, which is the number of years it will take for you to pay for a Mark II Powered Combat Armor you have lost! Report to the armory and have a new suit issued to you, then report back to me, private! Dismissed!",graphics/hullmods/civilian_grade.png
-Expensive Gubbinz,high_maintenance,,,,,,,,TRUE,,0,0,0,0,data.hullmods.HighMaintenance,you gotta fill the tanks with PREMIUM antimatter or it doesnít go,you gotta fill the tanks with PREMIUM antimatter or it doesnít go,graphics/hullmods/high_maintenance.png
-,,,,,,,,,,,,,,,,,,
-Little Red Wagon,tow_cable,,,,,,,,TRUE,,0,0,0,0,com.fs.starfarer.api.impl.campaign.TowCable,how about we all get out and push,how about we all get out and push,graphics/hullmods/monofilament_cable.png
-Party Van,drive_field_stabilizer,,,,,,,,TRUE,,0,0,0,0,com.fs.starfarer.api.impl.hullmods.DriveFieldStabilizer,how about we all get out and push,how about we all get out and push,graphics/hullmods/augmented_drive_field.png
-STEEL RAIN,ground_support,,,,,,,,TRUE,,0,0,0,0,com.fs.starfarer.api.impl.hullmods.GroundSupport,your money and your life (and your blueprints),your money and your life (and your blueprints),graphics/hullmods/ground_support.png
-"Live Fast, Die Young",delicate,,,,,,,,TRUE,,0,0,0,0,data.hullmods.DelicateMachinery,"The crew, not the ship. How itís always the biggest slackers and worst marathon runners that end up on phase ship is a mystery.
-Well, not really. Itís actually pretty simple. There are already periods of downtime in combat. Can you imagine having three times as much free time? Phase ships are the bollocks.
-Wait, this isnít a phase ship? WHY THE HELL DIDNíT ANYONE TELL ME OH SHIT OH FU-","The crew, not the ship. How itís always the biggest slackers and worst marathon runners that end up on phase ship is a mystery.
-Well, not really. Itís actually pretty simple. There are already periods of downtime in combat. Can you imagine having three times as much free time? Phase ships are the bollocks.
-Wait, this isnít a phase ship? WHY THE HELL DIDNíT ANYONE TELL ME OH SHIT OH FU-",graphics/hullmods/delicate_machinery.png
-Go Big or Go Home,hbi,,,,,,,,TRUE,,0,0,0,0,com.fs.starfarer.api.impl.hullmods.HeavyBallisticsIntegration,size matters,size matters,graphics/hullmods/ballistics_integration.png
-Skynet,automated,,,,,,,,TRUE,,0,0,0,0,com.fs.starfarer.api.impl.hullmods.Automated,BEEP BOOP DESTROY ALL HUMANS,BEEP BOOP DESTROY ALL HUMANS,graphics/hullmods/automated.png
-I Can Shoot My House From Here,advancedcore,,,,,,,,TRUE,,0,0,0,0,data.hullmods.AdvancedTargetingCore,"Itís simple, we kill Waldo. And everyone else. Once you get your murders into statistics range, heís bound to get caught in the crossfire.","Itís simple, we kill Waldo. And everyone else. Once you get your murders into statistics range, heís bound to get caught in the crossfire.",graphics/hullmods/advanced_targeting_core.png
-Make ACGs Marksman Rifles Or Die Trying,supercomputer,,,,,,,,TRUE,,0,0,0,0,data.hullmods.TargetingSupercomputer,makes the guns shoot REALLY fuckin far,makes the guns shoot REALLY fuckin far,graphics/hullmods/targeting_supercomputer.png
-Ace Combat 2 on a Budget,converted_bay,1,,,,,,,TRUE,,0,0,0,0,data.hullmods.ConvertedCargoBay,do you like these fighters i made them myself,do you like these fighters i made them myself,graphics/hullmods/converted_hangar.png
-Chubby Boi,vastbulk,,,,,,,,TRUE,,0,0,0,0,data.hullmods.VastBulk,too big to fail,too big to fail,graphics/hullmods/vast_bulk.png
-"Touch Fuzzy, Get Dizzy",axialrotation,,,,,,,,TRUE,,0,0,0,0,data.hullmods.AxialRotation,you spin me right round baby right round,you spin me right round baby right round,graphics/hullmods/axial_rotation.png
-Spin Me Right Round,anchorrotation,,,,,,,,TRUE,TRUE,0,0,0,0,data.hullmods.AnchorRotation,like a record baby right round round round,like a record baby right round round round,graphics/hullmods/axial_rotation.png
-Reduced Explosion,reduced_explosion,,,,,,,,TRUE,TRUE,0,0,0,0,data.hullmods.ReducedExplosion,not with a bang but with a whimper,not with a bang but with a whimper,graphics/hullmods/reduced_explosion.png
-Always Detaches,always_detaches,,,,,,,,TRUE,TRUE,0,0,0,0,data.hullmods.AlwaysDetaches,get away from me,get away from me,graphics/hullmods/detach_always.png
-Never Detaches,never_detaches,,,,,,,,TRUE,TRUE,0,0,0,0,data.hullmods.NeverDetaches,donít leave me,donít leave me,graphics/hullmods/detach_never.png
-No Weapon Flux,no_weapon_flux,,,,,,,,TRUE,TRUE,0,0,0,0,data.hullmods.NoWeaponFlux,i could do this all night,i could do this all night,
+The new chief designer, a loyal officer appointed by the Supreme Executor himself, instructed the forge-programmers make accommodations for the installation of special blast-proof insulated paneling produced by Sindria itself.
+
+If the passages are a bit narrower, conduits prone to overheating, and flush-set panels somewhat unwieldy to access, the official readiness reports include no criticism of the changes. Everyone agrees in both public and - as the Internal Security Ministry can attest - in private, that the stark grandeur of the Lion's Guard fleet is breathtaking.
+
+Crew casualties in combat are increased by %s. The base flux dissipation rate is reduced by %s, and the repair rate for disabled weapons and engines is reduced by %s.",Reduces the ship's performance.,,graphics/hullmods/special_modifications.png
+Chubby Boi,vastbulk,,,,,,,,TRUE,,0,0,0,0,data.hullmods.VastBulk,too big to fail,too big to fail,,graphics/hullmods/vast_bulk.png
+"Touch Fuzzy, Get Dizzy",axialrotation,,,,,,,,TRUE,,0,0,0,0,data.hullmods.AxialRotation,you spin me right round baby right round,you spin me right round baby right round,,graphics/hullmods/axial_rotation.png
+Spin Me Right Round,anchorrotation,,,,,,,,TRUE,TRUE,0,0,0,0,data.hullmods.AnchorRotation,like a record baby right round round round,like a record baby right round round round,,graphics/hullmods/axial_rotation.png
+Reduced Explosion,reduced_explosion,,,,,,,,TRUE,TRUE,0,0,0,0,data.hullmods.ReducedExplosion,not with a bang but with a whimper,not with a bang but with a whimper,,graphics/hullmods/reduced_explosion.png
+Always Detaches,always_detaches,,,,,,,,TRUE,TRUE,0,0,0,0,data.hullmods.AlwaysDetaches,get away from me,get away from me,,graphics/hullmods/detach_always.png
+Never Detaches,never_detaches,,,,,,,,TRUE,TRUE,0,0,0,0,data.hullmods.NeverDetaches,donÁ®ö leave me,donÁ®ö leave me,,graphics/hullmods/detach_never.png
+No Weapon Flux,no_weapon_flux,,,,,,,,TRUE,TRUE,0,0,0,0,data.hullmods.NoWeaponFlux,i could do this all night,i could do this all night,,
 Do Not Fire Through,do_not_fire_through,,,,,,,,TRUE,TRUE,0,0,0,0,data.hullmods.DoNotFireThrough,"STOP
-PLEASE","STOP
-PLEASE",
-,,,,,,,,,,,,,,,,,,
-# ship skin buffs,,,,,,,,,,,,,,,,,,
+PLEASE",STOP,,
+Shard Spawner,shard_spawner,,,,,,,,TRUE,TRUE,0,0,0,0,com.fs.starfarer.api.impl.hullmods.ShardSpawner,Yeets the Doreet,Yeets the Doreet,,
+Do Not Back Off,do_not_back_off,,,,,,,,TRUE,TRUE,0,0,0,0,com.fs.starfarer.api.impl.hullmods.DoNotBackOff,Sets DO_NOT_BACK_OFF AIFlag,Sets DO_NOT_BACK_OFF AIFlag,,
+,,,,,,,,,,,,,,,,,,,
+# ship skin buffs,,,,,,,,,,,,,,,,,,,
 Bird Lovers,fourteenth,,,,,,,,TRUE,,0,0,0,0,data.hullmods.Fourteenth,"put a bird on it
 
 the ones with the birds fight better
 
-(And they are even better in bed!)","put a bird on it
-
-the ones with the birds fight better
-
-(And they are even better in bed!)",graphics/hullmods/fourteenth.png
-Painted It Orange,heg_militarized,,,,,,,,TRUE,,0,0,0,0,data.hullmods.Militarized,and they threw in a tuneup for free,and they threw in a tuneup for free,graphics/hullmods/militarized_hegemony_auxiliary.png
-,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,
-# permanent ship debuffs,,,,,,,,,,,,,,,,,,
-Paper Mache Armor,comp_armor,,,,"dmod, damage, damageStruct",,,,TRUE,,0,0,0,0,data.hullmods.CompromisedArmor,warship cosplay,,graphics/hullmods/compromised_armor.png
-Cardboard Bulkheads,comp_hull,,,,"dmod, damage, damageStruct",,,,TRUE,,0,0,0,0,data.hullmods.CompromisedHull,5th grade naval engineering class project,,graphics/hullmods/compromised_hull.png
+(And they are even better in bed!)",put a bird on it,,graphics/hullmods/fourteenth.png
+Painted It Orange,heg_militarized,,,,,,,,TRUE,,0,0,0,0,data.hullmods.Militarized,and they threw in a tuneup for free,and they threw in a tuneup for free,,graphics/hullmods/militarized_hegemony_auxiliary.png
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+# permanent ship debuffs,,,,,,,,,,,,,,,,,,,
+Paper Mache Armor,comp_armor,,,,"dmod, damage, damageStruct",,,,TRUE,,0,0,0,0,data.hullmods.CompromisedArmor,warship cosplay,warship cosplay,,graphics/hullmods/compromised_armor.png
+Cardboard Bulkheads,comp_hull,,,,"dmod, damage, damageStruct",,,,TRUE,,0,0,0,0,data.hullmods.CompromisedHull,5th grade naval engineering class project,5th grade naval engineering class project,,graphics/hullmods/compromised_hull.png
 Broken Legs,degraded_engines,,,,"dmod, damage",,,,TRUE,,0,0,0,0,data.hullmods.DegradedEngines,"what do you call a warship with no legs
 
-whatever you want, she can't catch you",,graphics/hullmods/degraded_engines.png
-Fork in the Outlet,faulty_grid,,,,"dmod, damage",,,,TRUE,,0,0,0,0,data.hullmods.FaultyPowerGrid,"Ah, shit, electricity is leaking out now! Quickly, someone pass me a bucket!",,graphics/hullmods/faulty_power_grid.png
-Shiny Maracas for Ballast,unstable_coils,,,,"dmod, phaseDamage",,,,TRUE,,0,0,0,0,data.hullmods.PhaseCoilInstability,CRASH CLATTER BANG,,graphics/hullmods/phase_coil_instability.png
-Flimsy Piece of Shit,comp_structure,,,,"dmod, damageStruct, destroyedDamageAlways",,,,TRUE,,0,0,0,0,com.fs.starfarer.api.impl.hullmods.CompromisedStructure,"No salvage title, low lightyearage, old lady only used it to fly to a moon on Sundays! Perfect shape, trust me! Iím ripping myself off!",,graphics/hullmods/structural_damage.png
-The Entire Crew is Blind,glitched_sensors,,,,"dmod, damage",,,,TRUE,,0,0,0,0,com.fs.starfarer.api.impl.hullmods.GlitchedSensorArray,I CANT SEE SHIT,,graphics/hullmods/glitched_sensor_array.png
-(unintelligible mumbling),malfunctioning_comms,,,,"dmod, fighterBayDamage",,,,TRUE,,0,0,0,0,com.fs.starfarer.api.impl.hullmods.MalfunctioningComms,mrghghgnngggnnÅEph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn... hrblrbblrblllbrbrl...,,graphics/hullmods/malfunctioning_comms.png
-Bought These Fighter Bays from AliExpress,defective_manufactory,,,,"dmod, fighterBayDamage",,,,TRUE,,0,0,0,0,com.fs.starfarer.api.impl.hullmods.DefectiveManufactory,it was only 3.99 but im sure itll be ok,,graphics/hullmods/defective_manufactory.png
-Hungover Fighter Mechanics,damaged_deck,,,,"dmod, fighterBayDamage",,,,TRUE,,0,0,0,0,com.fs.starfarer.api.impl.hullmods.DamagedFlightDeck,"And a hangunder, and a hangsideways, and figgins are hanging there already, too.",,graphics/hullmods/damaged_flight_deck.png
-Held Together with Spit and Prayers,fragile_subsystems,,,,"dmod, damage, peak_time, notPhase",,,,TRUE,,0,0,0,0,com.fs.starfarer.api.impl.hullmods.FragileSubsystems,its not my fault i have spaceship asthma,,graphics/hullmods/fragile_subsystems.png
+whatever you want, she can't catch you",what do you call a warship with no legs,,graphics/hullmods/degraded_engines.png
+Torn Tendons,degraded_drive_field,,,,"dmod, damage, civOnly",,,,TRUE,,0,0,0,0,data.hullmods.DegradedDriveField,turns out the achilles is important oops,turns out the achilles is important oops,,graphics/hullmods/degraded_drivefield.png
+Fork in the Outlet,faulty_grid,,,,"dmod, damage",,,,TRUE,,0,0,0,0,data.hullmods.FaultyPowerGrid,"Ah, shit, electricity is leaking out now! Quickly, someone pass me a bucket!","Ah, shit, electricity is leaking out now! Quickly, someone pass me a bucket!",,graphics/hullmods/faulty_power_grid.png
+Shiny Maracas for Ballast,unstable_coils,,,,"dmod, phaseDamage",,,,TRUE,,0,0,0,0,data.hullmods.PhaseCoilInstability,CRASH CLATTER BANG,CRASH CLATTER BANG,,graphics/hullmods/phase_coil_instability.png
+Flimsy Piece of Shit,comp_structure,,,,"dmod, damageStruct, destroyedDamageAlways",,,,TRUE,,0,0,0,0,com.fs.starfarer.api.impl.hullmods.CompromisedStructure,"No salvage title, low lightyearage, old lady only used it to fly to a moon on Sundays! Perfect shape, trust me! IÁü• ripping myself off!","No salvage title, low lightyearage, old lady only used it to fly to a moon on Sundays! Perfect shape, trust me! IÁü• ripping myself off!",,graphics/hullmods/structural_damage.png
+The Entire Crew is Blind,glitched_sensors,,,,"dmod, damage",,,,TRUE,,0,0,0,0,com.fs.starfarer.api.impl.hullmods.GlitchedSensorArray,I CANT SEE SHIT,I CANT SEE SHIT,,graphics/hullmods/glitched_sensor_array.png
+(unintelligible mumbling),malfunctioning_comms,,,,"dmod, fighterBayDamage",,,,TRUE,,0,0,0,0,com.fs.starfarer.api.impl.hullmods.MalfunctioningComms,mrghghgnngggnn„Éªph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn... hrblrbblrblllbrbrl...,mrghghgnngggnn„Éªph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn... hrblrbblrblllbrbrl...,,graphics/hullmods/malfunctioning_comms.png
+Bought These Fighter Bays from AliExpress,defective_manufactory,,,,"dmod, fighterBayDamage",,,,TRUE,,0,0,0,0,com.fs.starfarer.api.impl.hullmods.DefectiveManufactory,it was only 3.99 but im sure itll be ok,it was only 3.99 but im sure itll be ok,,graphics/hullmods/defective_manufactory.png
+Hungover Fighter Mechanics,damaged_deck,,,,"dmod, fighterBayDamage",,,,TRUE,,0,0,0,0,com.fs.starfarer.api.impl.hullmods.DamagedFlightDeck,"And a hangunder, and a hangsideways, and figgins are hanging there already, too.","And a hangunder, and a hangsideways, and figgins are hanging there already, too.",,graphics/hullmods/damaged_flight_deck.png
+Held Together with Spit and Prayers,fragile_subsystems,,,,"dmod, damage, peak_time, notPhase",,,,TRUE,,0,0,0,0,com.fs.starfarer.api.impl.hullmods.FragileSubsystems,its not my fault i have spaceship asthma,its not my fault i have spaceship asthma,,graphics/hullmods/fragile_subsystems.png
 "Sorry Captain, Hold's Full of Starsector Doujinshi and I Ain't Getting Rid of It",comp_storage,,,,"dmod, damage, civOnly",,,,TRUE,,0,0,0,0,com.fs.starfarer.api.impl.hullmods.CompromisedStorage,"do you know how much this shit is gonna be worth in 20 cycles
-(Vayra, no)",,graphics/hullmods/compromised_storage.png
-We're Fucking Starving,increased_maintenance,,,,"dmod, damage, civ",,,,TRUE,,0,0,0,0,com.fs.starfarer.api.impl.hullmods.IncreasedMaintenance,please sir may i have another,,graphics/hullmods/increased_maintenance.png
-Leaky Antimatter Buckets,erratic_injector,,,,"dmod, damage, civ",,,,TRUE,,0,0,0,0,com.fs.starfarer.api.impl.hullmods.ErraticInjector,there's a hole in my bucket,,graphics/hullmods/erratic_injector.png
-,,,,,,,,,,,,,,,,,,
-Broken Arms,destroyed_mounts,,,,dmod,,,,TRUE,,0,0,0,0,data.hullmods.DestroyedWeaponMounts,ah but mr johnson..how will u shoot me..without any guns?,,graphics/hullmods/destroyed_weapon_mounts.png
-What Does This Button Do?,ill_advised,,,,dmod,,,,TRUE,,0,0,0,0,data.hullmods.IllAdvised,"it says DO NOT PRESS, thats a funny thing for a button that you're supposed to press to say",,graphics/hullmods/illadvised.png
+(Vayra, no)",do you know how much this shit is gonna be worth in 20 cycles,,graphics/hullmods/compromised_storage.png
+We're Fucking Starving,increased_maintenance,,,,"dmod, damage, civ, notAuto",,,,TRUE,,0,0,0,0,com.fs.starfarer.api.impl.hullmods.IncreasedMaintenance,please sir may i have another,please sir may i have another,,graphics/hullmods/increased_maintenance.png
+Leaky Antimatter Buckets,erratic_injector,,,,"dmod, damage, civ",,,,TRUE,,0,0,0,0,com.fs.starfarer.api.impl.hullmods.ErraticInjector,there's a hole in my bucket,there's a hole in my bucket,,graphics/hullmods/erratic_injector.png
+I'm Sorry Dave,faulty_auto,,,,"dmod, damage, notAuto",,,,TRUE,,0,0,0,0,com.fs.starfarer.api.impl.hullmods.FaultyAutomatedSystems,I'm afraid I can't do that.,I'm afraid I can't do that.,,graphics/hullmods/faulty_automated_systems.png
+Melted Mounts,damaged_mounts,,,,"dmod, damage",,,,TRUE,,0,0,0,0,com.fs.starfarer.api.impl.hullmods.DamagedWeaponMounts,Cunt's Fucked,Cunt's Fucked,,graphics/hullmods/damaged_weapon_mounts.png
+Blue Smoke,degraded_life_support,,,,"dmod, damage, notAuto",,,,TRUE,,0,0,0,0,com.fs.starfarer.api.impl.hullmods.DegradedLifeSupport,"Don't breathe this!
+
+Or do, I'm not a cop",Don't breathe this!,,graphics/hullmods/degraded_life_support.png
+Soap Bubble Shields,degraded_shields,,,,"dmod, damage, reqShields",,,,TRUE,,0,0,0,0,com.fs.starfarer.api.impl.hullmods.DegradedShields,blow on em and they're gone,blow on em and they're gone,,graphics/hullmods/degraded_shields.png
+,,,,,,,,,,,,,,,,,,,
+Broken Arms,destroyed_mounts,,,,dmod,,,,TRUE,,0,0,0,0,data.hullmods.DestroyedWeaponMounts,ah but mr johnson..how will u shoot me..without any guns?,ah but mr johnson..how will u shoot me..without any guns?,,graphics/hullmods/damaged_weapon_mounts.png
+What Does This Button Do?,ill_advised,,,,dmod,,,,TRUE,,0,0,0,0,data.hullmods.IllAdvised,"it says DO NOT PRESS, thats a funny thing for a button that you're supposed to press to say","it says DO NOT PRESS, thats a funny thing for a button that you're supposed to press to say",,graphics/hullmods/illadvised.png
